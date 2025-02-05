@@ -1,4 +1,5 @@
 
+using PizzaWebApi.Loggers;
 using PizzaWebApi.Repositories;
 
 namespace PizzaWebApi
@@ -16,6 +17,9 @@ namespace PizzaWebApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            
+            // CONSEGNA 05/02/2025: 
+            // Ora abbiamo una nuova dependency da gestire!
 
             WebApplication app = builder.Build();
 
